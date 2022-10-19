@@ -1,11 +1,13 @@
 const menuElements = document.querySelectorAll('.menu-header ul li a');
 const arrowUpElement = document.querySelector('.arrow-up i');
 const btnViewMore = document.querySelector('.btn-view-more');
+const btnMobileElement = document.querySelector('.mobile');
 
 //FUNÇÕES
 
 const idElementOnClick = (event) => {
     event.preventDefault();
+    document.querySelector('.menu-header').classList.remove('menu-opener');
     const element = event.target;
     const id = element.getAttribute('href');
     console.log(element,id)
@@ -31,6 +33,18 @@ const viewMoreProjects = (e) => {
 
 };
 
+const openMenuMobile = (ev) => {
+    ev.preventDefault();
+
+    const menuMobileElement = document.querySelector('.menu-header');
+    console.log(menuMobileElement.clientHeight)
+    if(menuMobileElement.clientHeight == 0) {
+        menuMobileElement.classList.add('menu-opener');
+    } else {
+        menuMobileElement.classList.remove('menu-opener');
+    };
+}
+
 // EVENTOS
 
 menuElements.forEach((item) => {
@@ -40,3 +54,5 @@ menuElements.forEach((item) => {
 btnViewMore.addEventListener('click', viewMoreProjects);
 
 arrowUpElement.addEventListener('click', idElementOnClick);
+
+btnMobileElement.addEventListener('click', openMenuMobile);
