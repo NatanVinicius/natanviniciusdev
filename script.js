@@ -10,7 +10,6 @@ const idElementOnClick = (event) => {
     document.querySelector('.menu-header').classList.remove('menu-opener');
     const element = event.target;
     const id = element.getAttribute('href');
-    console.log(element,id)
     const section = document.querySelector(id).offsetTop;
 
     window.scroll({
@@ -37,7 +36,6 @@ const openMenuMobile = (ev) => {
     ev.preventDefault();
 
     const menuMobileElement = document.querySelector('.menu-header');
-    console.log(menuMobileElement.clientHeight)
     if(menuMobileElement.clientHeight == 0) {
         menuMobileElement.classList.add('menu-opener');
     } else {
