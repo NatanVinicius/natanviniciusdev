@@ -531,6 +531,11 @@ footer {
     header .menu-header ul li {
         margin: 10px 0px;
     }
+    
+    .section-home .arrow-down {
+        right: 10px;
+        bottom: 10px;
+    }
 
     
 
