@@ -49,6 +49,7 @@ header .logo span {
 
 header .menu-header {
     color: #aeaeae;
+    transition: all .5s;
 }
 
 header .menu-header ul {
@@ -139,8 +140,8 @@ header .menu-header li a:hover::after {
 /* ARROW DOWN */
 
 .section-home .arrow-down {
-    height: max-content;
     position: absolute;
+    right: 60px;
     bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -408,6 +409,12 @@ footer {
 
 /* Custons padrões */
 
+
+
+    
+
+
+
 .section-projects .height-area-projects {
     height: 1152px;
 }
@@ -507,7 +514,13 @@ footer {
     }
 
     header .menu-header {
-        display: none;
+        height: 0;
+        overflow: hidden;
+    }
+
+    header .menu-opener {
+        height: 152px;
+        transition: all .5s;
     }
 
     header .menu-header ul{
