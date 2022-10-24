@@ -349,24 +349,81 @@ header .menu-header li a:hover::after {
     margin: 20px 0;
 }
 
+.section-contact .send-email { 
+    max-width: 700px;
+}
+
+.section-contact .send-email form{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-contact .send-email input {
+    height: 3rem;
+    margin-bottom: 20px;
+    padding: 10px 10px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #3ae9d4;
+    color: #FFF;
+    transition: all .5s;
+}
+
+.section-contact .send-email input:focus {
+    border-bottom: 1px solid #2ebcabaf;
+}
+
+.section-contact .send-email button {
+    width: 130px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 15px 10px;
+    background-color: #3ae9d4;
+    border: 1px solid #3ae9d4;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.section-contact .send-email button:hover {
+    background-color: transparent;
+    border: 1px solid #3ae9d4;
+    color: #3ae9d4;
+}
+
+.section-contact .send-email textarea {
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, .4);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    resize: none;
+    outline: none;
+    
+}
+
 .section-contact .icons-contact {
     width: max-content;
     margin: 0 auto;
-    padding: 20px 40px;
-    background-color: rgba(0, 0, 0, .4);
+    padding: 10px 40px;
     border-radius: 8px;
 }
 
 .section-contact .icons-contact i {
-    color: #46BCAB;
-    font-size: 3rem;
+    color: #aeaeae;
+    font-size: 1.5rem;
     margin: 0 20px;
     cursor: pointer;
     transition: all .2s;
 }
 
 .section-contact .icons-contact i:hover {
-    opacity: 50%;
+    color: #3ae9d4;
 }
 
 
@@ -408,11 +465,6 @@ footer {
 }
 
 /* Custons padrões */
-
-
-
-    
-
 
 
 .section-projects .height-area-projects {
@@ -530,11 +582,6 @@ footer {
 
     header .menu-header ul li {
         margin: 10px 0px;
-    }
-    
-    .section-home .arrow-down {
-        right: 10px;
-        bottom: 10px;
     }
 
     
