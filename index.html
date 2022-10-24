@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;wght@700;900&display=swap" rel="stylesheet">
     <!-- CSS and JS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -62,7 +62,7 @@
             <div class="area-about">
                 <div class="about">
                     <div class="perfil-img">
-                        <img src="./img/perfil2.jpeg" alt="">
+                        <img src="./img//profile-pic.png" alt="">
                     </div>
                     <div class="about-txt">
                         <h3>Sobre mim</h3>
@@ -177,7 +177,7 @@
                         </div>
                         <div class="project-about">
                             <h3>Validador de formulário</h3>
-                            <p>Validador simples de formulário onde não permite o usuário prosseguir sem alguma informação ou informação incompleta.</p>
+                            <p>Validador simples de formulário onde não permite o usuário prosseguir sem alguma informalção ou informação incompleta.</p>
                             <span>HTML - CSS - Javascript.</span>
                         </div>
                     </div>
@@ -188,12 +188,21 @@
         <section class="section-contact dark-gray" id="contato">
             <div class="contact">
                 <h2 class="title-h2">Contato</h2>
-                <p>Algumas formas de contato comigo.</p>
-                <div class="icons-contact">
-                    <a  target="_blank" href="https://www.linkedin.com/in/natanvinicius99/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a target="_blank" href="https://github.com/NatanVinicius"><i class="fa-brands fa-square-github"></i></a>
-                    <a target="_blank" href="https://www.instagram.com/natanviniciusss/"><i class="fa-brands fa-square-instagram"></i></a>
-                    <i class="fa-solid fa-envelope"></i>
+                <p>Entre em contato comigo para um bate papo.</p>
+                <div class="send-email">
+                    <form action="https://formsubmit.co/natanviniciusdepaula@gmail.com" method="POST" id="form">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="text" name="name" placeholder="Seu nome" required>
+                        <input type="email" name="email" placeholder="Seu email" required>
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucess.html">
+                        <textarea name="message" id="message-email" placeholder="Escreva aqui sua mensagem"></textarea>
+                        <button type="submit" id="btn-send-email">Enviar</button>
+                    </form>
+                    <div class="icons-contact">
+                        <a  target="_blank" href="https://www.linkedin.com/in/natanvinicius99/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a target="_blank" href="https://github.com/NatanVinicius"><i class="fa-brands fa-square-github"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/natanviniciusss/"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
                 </div>
             </div>
         </section>
